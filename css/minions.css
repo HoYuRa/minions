@@ -1,0 +1,255 @@
+@charset "utf-8";
+body {
+	font-family: 'Maven Pro','Noto Sans KR', sans-serif;
+	font-size:16px;
+	color: #000;
+	background-color: #fff;
+}
+a,a:link {
+	text-decoration:none;
+	color:inherit;
+}
+.notext {
+	display : none;
+}
+
+
+
+/* 헤더 */
+.header_outer {
+	border-bottom:2px solid #f9c02d;
+}
+#header {
+	width:920px;
+	height:200px;
+	margin:0 auto;
+	position:relative;
+}
+
+.top_menu {
+	float:left;
+}
+.top_menu li {
+	float:left;
+	margin-right:10px;
+	line-height:200px;
+}
+#main_logo {
+	position:absolute;
+	width:292px;
+	height:142px;
+	left:50%;
+	bottom:-2px;
+	transform:translatex(-50%);
+}
+.sns_menu {
+	line-height:200px;
+	float:right;
+}
+.sns_menu li {
+	float:left;
+	margin-left:10px;
+}
+/* 헤더 */
+
+
+
+/* 네비 */
+.nav {
+	text-align:center;
+	height:50px;
+}
+#gnb {
+	width:400px;  /*사이즈줄이기*/
+	margin:0 auto;
+}
+#gnb li {
+	display:inline-block;
+	margin: 0 5px;
+	line-height:50px;
+}
+
+/* 네비 */
+
+/* 마우스 오버 시 메뉴 텍스트 색상 변경 */
+.top_menu li a {
+	color:#666666;
+	font-size:14px;
+	font-weight:500;
+	transition:color 0.3s;
+}
+.top_menu li a:hover {
+	color:#000;
+}
+#gnb li a {
+	color:#f9c02d;
+	font-size:18px;
+	font-weight:700;
+	transition:color 0.3s;
+}
+#gnb li a:hover {
+	color:#000;
+}
+/* 마우스 오버 시 메뉴 텍스트 색상 변경 */
+
+/* 유튜브 */
+#youtube-movie {
+	width:920px;
+	height:460px;
+	margin:0 auto;
+	position:relative;
+}
+#youtube-movie iframe {
+	width:100%;
+	height:100%;
+	border:0;
+}
+#movie-character {
+	position:absolute;
+	top:40%;
+	left:50%;
+    transform:translatex(-50%)
+}
+
+/* main */
+
+.main_title {
+	text-align:center;
+	line-height:280px;
+	font-size:30px;
+	color:#f9c02d;
+	font-weight:900;
+	text-transform:capitalize;
+	margin-bottom:-110px;
+}
+.character {
+	width:920px;
+	height:306px;
+	margin:0 auto;
+	font-size:0;
+	margin-bottom:20px;
+}
+.character li {
+	display:inline-block; /*여백자동추가*/
+	border:1px solid #eee;
+	width:306px;
+	height:306px;
+	box-sizing:border-box;
+	overflow:hidden;
+	
+	/* float:left; */
+	/* border:1px solid #f9c02d; */
+	/* overflow:hidden; */
+	/* width:307px; */
+	/* height:306px; */
+	/* box-sizing:border-boz; */
+}
+
+/*  box-sizing:border-box;와 같이 썼을때 나중에 기재한것이 우선순위 */
+.character li:nth-child(2) {
+	width:307px;
+}
+.character li:hover {
+	border-color:#f9c02d;
+	transition:border-color 0.3s;
+}
+.character li:hover img {
+	transition:transform 0.3s;
+	transform:scale(1.4,1.4);
+}
+/*이벤트영역 2가지 방법*/
+
+
+/* .banner weapper{ */
+	/* background:#f9c03d; 
+	
+	html에도 감싸주기
+*/
+
+.banner {
+	background:#f9c03d;
+	text-align:center;
+}
+
+#footer {
+	/*블럭 요소 가로폭 : 100%  */
+	max-width:920px;
+	margin:0 auto;
+	padding:15px 0;
+	position:relative;
+}
+.extra_menu li {
+	display:inline-block;
+	margin-top:10px;
+}
+
+
+
+
+
+/* .extra_menu li:nth-child(2) { */
+	 /* margin:0 10px; */
+/* } */
+	 	 
+		 
+.extra_menu li:nth-child(2):before{
+	content:'';
+	width:1px;
+	height:10px;
+	background:#333;
+	display:inline-block;
+	margin:0 5px;
+}
+.extra_menu li:nth-child(2):after{
+	content:'';
+	width:1px;
+	height:10px;
+	background:#333;
+	display:inline-block;
+	margin:0 5px;
+}
+.extra_menu li a {
+	font-size:15px;
+	color:#888;
+	transition:color 0.3s;
+}
+.extra_menu li a:hover {
+	color:#000
+}
+.sub_logo {
+	position:absolute;
+	right:0;
+	top:30%;
+	transform:translatey(60%);
+}
+.copy {
+	font-size:11px;
+	color:#888;
+	margin-bottom:30px;
+	position:absolute;
+	left:0;
+	top:80%;
+	transform:translatey(70%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
