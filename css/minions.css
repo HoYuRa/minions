@@ -253,7 +253,24 @@ figcaption {
 	display:none; /*공간마저남김지않고 없앰*/
 	visibility:hidden; /*공간표시*/
 }
+#prodci {
+	display: flex;
+	justify-content: space-between;
+}
+#prodci li {
+	position: relative;
+}
+#prodci .outlink {
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.5);
+}
 
+#prodci > li:hover .outlink {
+	display: block;
+}
 
 
 
