@@ -248,11 +248,13 @@ a,a:link {
 }
 #storyimg img {
 	max-width: 100%;
+	margin-bottom: 50px;
 }
 figcaption {
 	display:none; /*공간마저남김지않고 없앰*/
 	visibility:hidden; /*공간표시*/
 }
+
 #prodci {
 	display: flex;
 	justify-content: space-between;
@@ -262,16 +264,76 @@ figcaption {
 }
 #prodci .outlink {
 	display: none;
+	font-size:2rem;
+	color:#f3f3f3;
 	position: absolute;
-	width: 100%;
-	height: 100%;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 50%;
+	left:50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
 	background-color: rgba(0,0,0,.5);
 }
-
+#prodci .hide {
+	display:none;
+}
 #prodci > li:hover .outlink {
 	display: block;
 }
 
+
+.aboutch {
+	display: flex;
+	justify-content: space-between;
+}
+.aboutch img{ /*사진 크기가 클때 크기 맞춰서*/
+	max-width: 100%;
+}
+
+
+.aboutch li {
+	text-align: center;
+	position: relative;
+	border:1px solid transparent;
+	box-sizing:border-box;
+	overflow:hidden;
+}
+.aboutch  li:hover {
+	border:1px solid #ddd;
+}
+
+.aboutch  li:hover img { /*마우스오버시 속도?*/
+	transition:all .3s;
+	transform: scale(1.1,1.1);
+}
+
+/*아이콘 보이게 */
+.aboutch .outlink {
+	display: none;
+	font-size:2rem;
+	color:#f3f3f3;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 50%; /*사각형을 모퉁이 둥글리기처럼*/
+	left:50%; /*중간에 위치하게 만듬*/
+	top: 50%; /*중간에 위치하게 만듬*/
+	transform: translate(-50%,-50%);
+	background-color: rgba(0,0,0,.1);
+	z-index: 1000; /*레이어순서 위로*/
+}
+.aboutch .hide { /*처음엔 안보이게*/
+	display:none;
+}
+.aboutch > li:hover .outlink { /*마우스오버시 아이콘보이게*/
+	display: block;
+	border:1px solid #e3e3e3;
+}
 
 
 
